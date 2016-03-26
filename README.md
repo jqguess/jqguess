@@ -6,7 +6,7 @@
 
 ## Want a similar bootstrap theme in five minutes?
 
-1. Download or Clone it.
+1. Fork this, or getbootstrap!
 2. Create your new gh-page (optional): `git checkout --orphan gh-pages`
    Creates an orphan gh-page with no parents, switch to gh-page
 3. Commit your changes: `git commit -m 'Add some feature'`
