@@ -21,7 +21,18 @@
             loads a script that will have a module ID of 'main'-->
         <script data-main="scripts/bootstrap.min.js" src="scripts/require.js">
         </script>
-
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+       <script> 
+	   $(document).ready(function(){
+          $("div").hover(function(){
+          $("#logo").animate({
+		  left: '250px',
+		  opacity: '0.5',
+		
+		});
+    });
+});
+</script> 
     </head>
     <body>
 
@@ -50,7 +61,7 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="col-sm-4">
+                    <div class="col-sm-4" id="logo" style="position:relative;">
                         <img src="img/jqglogo.png" alt="logo" class="img-circle" style="width:150px; height:150px; float:right; z-index:1">
 
                     </div>
