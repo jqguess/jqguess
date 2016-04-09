@@ -19,20 +19,36 @@
 
         <!--This sets the baseUrl to the "scripts" directory, and
             loads a script that will have a module ID of 'main'-->
-        <script data-main="scripts/bootstrap.min.js" src="scripts/require.js">
-        </script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+       <script data-main="scripts/bootstrap.min.js" src="scripts/require.js">
+       </script>
+       <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
        <script> 
+              function shake(div){                                                                                                                                                                                            
+         var interval          = 50;                                                                                                 
+         var distance          = 100;                                                                                                  
+         var times             = 2;                                                                                                      
+
+       $(div).css('position','relative');                                                                                  
+
+       for(var iter          =0;iter<(times+1);iter++){                                                                              
+       $(div).animate({ 
+            left:((iter%2 ==0 ? distance : distance*-1))
+            },interval);                                   
+       }//for                                                                                                              
+
+       $(div).animate({ left: 10},interval);
+       $("#logo").fadeTo("slow", 0.90);
+	   $("#logo").fadeTo("slow", 0.80);
+       $("#logo").fadeTo("slow", 0.70);
+       $("#logo").fadeTo("slow", 0.60);
+       }//shake
+	   
 	   $(document).ready(function(){
-          $("div").hover(function(){
-          $("#logo").animate({
-		  left: '250px',
-		  opacity: '0.5',
-		
-		});
-    });
-});
-</script> 
+	   $("div").on("mouseover","#logo",function(){
+          shake(this);
+       });
+       });
+       </script> 
     </head>
     <body>
 
