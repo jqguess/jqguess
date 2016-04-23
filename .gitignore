@@ -1,18 +1,16 @@
-composer.phar
-/vendor/
-/bootstrap/
-/css/
-/index.html/
-/composer.json/
-/fonts/
-/image/
-/js/
-# Commit your application's lock file http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file
-# You may choose to ignore a library lock file http://getcomposer.org/doc/02-libraries.md#lock-file
-# composer.lock
+/*.git
+/composer.phar
+#vendor/
+#bootstrap/
+#css/
+#index.html
+#composer.json/
+#fonts/
+#image/
+#js/
+/ composer.lock
 # img
 # css
-# nbproject
-# js
-# fonts
-# vendor
+/nbproject
+/nbproject/
+
