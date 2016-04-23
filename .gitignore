@@ -1,16 +1,16 @@
+/* .git
 /composer.phar
-/vendor/
-/bootstrap/
-/css/
+#vendor/
+#bootstrap/
+#css/
 #index.html
-/composer.json/
-/fonts/
-/image/
-/js/
+#composer.json/
+#fonts/
+#image/
+#js/
 / composer.lock
-/ img
-/ css
+# img
+# css
 /nbproject
-/ js
-/ fonts
-/ vendor
+/nbproject/
+
