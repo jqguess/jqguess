@@ -23,19 +23,16 @@
        </script>
        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
        <script> 
-      function shake(div){                                                                                                                                                                                            
-            var interval          = 50;                                                                                                 
-            var distance          = 100;                                                                                                  
-            var times             = 2;                                                                                                      
-
+              function shake(div){                                                                                                                                                                                            
+         var interval          = 50;                                                                                                 
+         var distance          = 100;                                                                                                  
+         var times             = 2;                                                                                                      
        $(div).css('position','relative');                                                                                  
-
        for(var iter          =0;iter<(times+1);iter++){                                                                              
        $(div).animate({ 
             left:((iter%2 ==0 ? distance : distance*-1))
             },interval);                                   
        }//for                                                                                                              
-
        $(div).animate({ left: 10},interval);
        $("#logo").fadeTo("slow", 0.90);
 	   $("#logo").fadeTo("slow", 0.80);
@@ -48,10 +45,10 @@
           shake(this);
        });
         $('#lg').on('mouseover', function(){
-	$(this).fadeTo('slow', .1);
+	   $(this).fadeTo('slow', .1);
        });
        });
-    </script> 
+       </script> 
     </head>
     <body>
 
@@ -103,7 +100,7 @@
                 <div class="col-md-6">
 
                     <blockquote>
-                        <p>This is my landing page on GitHub. It is a great time to be interested in tech with drones, self-driving cars, and A.I. on the horizon. I've taught myself quite a bit about computers in the last decade, at first to squeeze every last bit of processing and bandwidth
+                        <p>This is my landing page on GitHub. It is a great time to be interested in tech with drones, self-driving cars, and A.I. on the horizon. I've taught myself quite a bit about computers, at first to squeeze every last bit of processing and bandwidth
                             from my system for advantages in gaming and work. It took quite a while but I am finally in a position to switch careers to a tech job, which I should have done years ago!</p>
                         <small> -jqguess 02/2016'<cite title="Source Title"></cite></small>
                     </blockquote>
@@ -116,7 +113,7 @@
                             contributors for their effort so scrubs like me can quickly build off your work. In the off chance you want to use this theme, feel free to fork the repo and follow the readme. 
                             I have a few other of my repo's linked for past projects that could be added too, or learning programs I have worked on. Down below are some quick links for PHP and JS mainly for my use,
                             and a few news aggregation websites.</p>
-                        <small>-jqguess 02/2016'<cite title="Source Title"></cite></small>
+                        <small>-jqguess 03/2016'<cite title="Source Title"></cite></small>
                     </blockquote>
 
                 </div>
@@ -132,9 +129,10 @@
                 </div>  
                 <div class="col-md-8">
                     <blockquote>
-                        <h4>Interesting Title Here</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras eget tortor elementum, rhoncus enim id, euismod libero. Nam viverra, ante pulvinar elementum auctor, 
-                            odio ipsum elementum velit, non cursus lectus arcu non ex. Etiam sit amet ante fermentum, viverra quam sit amet, scelerisque nisi. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+                        <h4>Check out my other repos</h4>
+                        <p>If your into php and  haven't tried Laravel try out my simple blog app to get you started. Laravel gives much more life to php with features such as Eloquent Models, Elixir, Facades,
+                        Query Builders, Blade Templates and about every other feature you could expect from a cutting edge framework.  After only building one app and spending just a few hours with this framework,
+                        I have no intentions of going back. </p> <small>-jqguess 06/2016</small>
                     </blockquote>    
                 </div>
             </div>       
@@ -142,15 +140,14 @@
             <!---More space filler-->
             <div class="row" style="padding:40px">
                 <div class="col-sm-8">  
-                    <h4 style="padding-top: 15px; padding-bottom:15px;">Another Title</h4>
+                    <h4 style="padding-top: 15px; padding-bottom:15px;">Apple news</h4>
 
                     <p class="lead">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras eget tortor elementum, rhoncus enim id, euismod libero. Nam viverra, ante pulvinar elementum auctor, odio ipsum elementum velit, non cursus lectus arcu non ex. 
-                        Etiam sit amet ante fermentum, viverra quam sit amet, scelerisque nisi. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
-                    </p>
+                        I wrote about the new iOS beta and although it will still be handy, Apple seems to troll us by announcing that built-in apps can now be removed. And then later adding they programs are not actually
+                    removed... only the icons.  </p> 
                     <p class="lead">
-                        In volutpat, libero sit amet porta eleifend, erat lacus eleifend tortor, a lacinia dolor metus ut justo. Vivamus in turpis quam. Donec scelerisque hendrerit magna, quis placerat odio mattis non. Mauris sed ligula consectetur,
-                        rutrum nibh nec, placerat tortor. Vivamus porta elit id dui tincidunt
+                        The rumor that the new iPhone 7 will have no headset jack is still rampant, meaning the lightning jack will work over time. This will allow for a thinner and more water resistent phone.  I also read
+                        a rumor about a clear glass phone, which definately has me interested.
                     </p>
                 </div>
             </div>
