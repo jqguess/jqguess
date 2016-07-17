@@ -1,5 +1,14 @@
 {
+    "name": "boot_matui",
+    "authors": [ 
+        {
+            "name": "jqguess",
+            "email": "jqguess@liberty.edu"
+        }
+    ],
+    "minimum-stability": "",
     "require": {
-        "twbs/bootstrap": "^3.3"
-    }
+        "twbs/bootstrap": "^3.3.6"
+	}
+	
 }

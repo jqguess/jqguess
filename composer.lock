@@ -4,21 +4,21 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "b9fae77fc4bd1f6f62c04e9ee6f0c0df",
-    "content-hash": "98bbb170c95027a5a9ec5bfeb6b52e6d",
+    "hash": "dfce02eb50fb721b35909cfa134742ed",
+    "content-hash": "04e0444571922e5a8ca254ba22a9c9c4",
     "packages": [
         {
             "name": "twbs/bootstrap",
-            "version": "v3.3.6",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/twbs/bootstrap.git",
-                "reference": "81df608a40bf0629a1dc08e584849bb1e43e0b7a"
+                "reference": "fb75e8615a390dfac28ca9f32470d594e47acd76"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/twbs/bootstrap/zipball/81df608a40bf0629a1dc08e584849bb1e43e0b7a",
-                "reference": "81df608a40bf0629a1dc08e584849bb1e43e0b7a",
+                "url": "https://api.github.com/repos/twbs/bootstrap/zipball/fb75e8615a390dfac28ca9f32470d594e47acd76",
+                "reference": "fb75e8615a390dfac28ca9f32470d594e47acd76",
                 "shasum": ""
             },
             "replace": {
@@ -56,12 +56,12 @@
                 "responsive",
                 "web"
             ],
-            "time": "2015-11-24 19:37:05"
+            "time": "2016-07-15 00:09:18"
         }
     ],
     "packages-dev": [],
     "aliases": [],
-    "minimum-stability": "stable",
+    "minimum-stability": "dev",
     "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
