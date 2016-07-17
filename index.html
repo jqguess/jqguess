@@ -81,7 +81,7 @@
 <!-- End Navbar -->
 
 <div class="wrapper">
-	<div class="header header-filter" style="background-image: url('assets/img/droid.jpg');">
+	<div class="header header-filter" id="droid" style="background-image: url('assets/img/droid.jpg');">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-8 col-md-offset-2">
@@ -218,19 +218,19 @@
                                             <!-- Wrapper for slides -->
                                             <div class="carousel-inner">
                                                 <div class="item active">
-                                                    <img src="assets/img/fastroad.jpg" alt="Awesome Image">
+                                                    <img src="assets/img/fastroad.jpg" class="img" alt="Awesome Image">
                                                     <div class="carousel-caption">
                                                         <h4><i class="material-icons">location_on</i> Swank city view, somewhere on earth.</h4>
                                                     </div>
                                                 </div>
                                                 <div class="item">
-                                                    <img src="assets/img/road.jpg" alt="Awesome Image">
+                                                    <img src="assets/img/road.jpg" class="img" alt="Awesome Image">
                                                     <div class="carousel-caption">
                                                         <h4><i class="material-icons">location_on</i> Somewhere Beyond, United States</h4>
                                                     </div>
                                                 </div>
                                                 <div class="item">
-                                                    <img src="assets/img/redsky.jpg" alt="Awesome Image">
+                                                    <img src="assets/img/redsky.jpg" class="img"alt="Awesome Image">
                                                     <div class="carousel-caption">
                                                         <h4><i class="material-icons">location_on</i>Red Sky, United States</h4>
                                                     </div>
@@ -286,7 +286,7 @@
                                                 </a>
                                             </div>
                                         </div>
-                                        <p class="text-divider">Or Be Classical</p>
+                                        <p class="text-divider">Or the old way</p>
                                         <div class="content">
 
                                             <div class="input-group">
@@ -363,7 +363,7 @@
                             </div>
 
                             <button class="btn btn-primary btn-round" data-toggle="modal" data-target="#myModal">
-                                Information on hiring me
+                                Info on how to put me to work
                             </button>
                         </div>
                     </div>
@@ -430,7 +430,7 @@
 	            </ul>
 	        </nav>
 	        <div class="copyright pull-right">
-	            &copy; 2016, made with <i class="material-icons">favorite</i> by JQGuess, Bootstrap, & Material-Kit
+	            &copy; 2016, made by <i class="material-icons">face</i> JQGuess, using Bootstrap, & Material-Kit
 	        </div>
 	    </div>
 	</footer>
@@ -504,7 +504,11 @@
                     $(this).rotate({animateTo:-360})
                 }
             }
-
         });
+    </script>
+    <script>
+      $(document).ready(function(){
+          $("#droid").fadeToggle('slow', .4, 1);
+      });
     </script>
 </html>
