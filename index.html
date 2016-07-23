@@ -342,30 +342,33 @@
                                 <span aria-hidden="true"><i class="material-icons">clear</i></span>
                             </button>
 
-                            <b>Info alert:</b> Huzzah!, If you see this notification you are still paying attention...
+                            <b>Info alert:</b> Hey!, If you see this notification your cognitive abilities are functioning.
                         </div>
                     </div>
 
-                <div id="images">
-                    <div class="title">
-                        <h2></h2>
-                    </div>
-                    <br>
-                    <div class="section" id="javascriptComponents">
-                    <div class="row">
-                        <div class="col-sm-3">
-                            <h4></h4>
-                            <img src="assets/img/chewy.jpg" alt="Rounded Image" class="img-rounded img-responsive img-raised">
+                    <div id="images">
+                        <div class="title">
+                            <h2></h2>
                         </div>
-                        <div class="col-md-6 col-md-offset-2">
-                            <div class="title">
-                                <h3>Like anything you see?</h3>
+                        <br>
+                        <div class="section" id="javascriptComponents">
+                            <div class="row">
+                                <div class="col-sm-3">
+                                    <h4></h4>
+                                    <img src="assets/img/chewy.jpg" alt="Rounded Image" id =""
+                                         class="img-rounded img-responsive img-raised">
+                                </div>
+                                <div class="col-md-6 col-md-offset-2">
+                                    <div class="title">
+                                        <h3>Random Wookie Encounter</h3>
+                                    </div>
+
+                                    <button class="btn btn-primary btn-round" data-toggle="modal"
+                                            data-target="#myModal">
+                                        Info on how to put me to work
+                                    </button>
+                                </div>
                             </div>
-
-                            <button class="btn btn-primary btn-round" data-toggle="modal" data-target="#myModal">
-                                Info on how to put me to work
-                            </button>
-                        </div>
                     </div>
                     <div class="row">
 
@@ -506,9 +509,31 @@
             }
         });
     </script>
-    <script>
-      $(document).ready(function(){
-          $("#droid").fadeToggle('slow', .4, 1);
-      });
-    </script>
+<script>
+function shake(div){
+var interval          = 50;
+var distance          = 100;
+var times             = 2;
+
+$(div).css('position','relative');
+
+for(var iter          =0;iter<(times+1);iter++){
+$(div).animate({
+left:((iter%2 ==0 ? distance : distance*-1))
+},interval);
+}//for
+
+$(div).animate({ left: 10},interval);
+$("#droid").fadeTo("slow", 0.90);
+$("#droid").fadeTo("slow", 0.80);
+$("#droid").fadeTo("slow", 0.70);
+$("#droid").fadeTo("slow", 0.60);
+}//shake
+
+$(document).ready(function(){
+$("div").on("mouseover","#droid",function(){
+shake(this);
+});
+});
+</script>
 </html>
