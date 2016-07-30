@@ -21,6 +21,48 @@
 
 	<!-- CSS Just for demo purpose, don't include it in your project -->
 	<link href="assets/css/demo.css" rel="stylesheet" />
+	  @-webkit-keyframes TRANSITION-IN {
+        0% {
+            -webkit-transform: scale(0.2);
+            opacity: 0;
+        }
+         50% {
+             -webkit-transform: scale(.6);
+         }
+        75% {
+            -webkit-transform: scale(1.25);
+        }
+        100% {
+            -webkit-transform: scale(1);
+            margin-top: 0;
+        }
+    }
+
+
+    @-webkit-keyframes BLUR-IN {
+        0% {
+            -webkit-filter: blur(50px);
+        }
+        50% {
+            -webkit-filter: blur(25px);
+        }
+
+        75% {
+            -webkit-filter: blur(50px);
+        }
+        100% {
+            -webkit-filter: blur(0px);
+        }
+    }
+    div {
+        -webkit-animation-name: TRANSITION-IN, BLUR-IN;
+    }
+    #droid {
+        -webkit-animation-name: TRANSITION-IN, BLUR-IN;
+        -webkit-animation-duration: 2s;
+        -webkit-animation-timing-function: ease-out;
+        /*-webkit-animation-fill-mode: forwards;*/
+    }
 </head>
 
 <body class="index-page">
