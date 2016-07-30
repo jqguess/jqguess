@@ -41,7 +41,27 @@
             -webkit-transform: scale(1);
             margin-top: 0;
         }
+        }
+         @-webkit-keyframes BRIGHTNESS {
+        0% {
+            -webkit-filter: brightness(1);
+        }
+        25% {
+            --webkit-filter: brightness(.2);
+        }
+
+        50% {
+            -webkit-filter: brightness(.5);
+        }
+
+        75% {
+            -webkit-filter: brightness(4);
+        }
+        100% {
+            -webkit-filter: brightness(1);
+        }
     }
+
     @-webkit-keyframes BLUR-IN {
         0% {
             -webkit-filter: blur(50px);
@@ -58,10 +78,10 @@
         }
     }
     div {
-        -webkit-animation-name: TRANSITION-IN, BLUR-IN;
+        -webkit-animation-name: TRANSITION-IN, BLUR-IN, BRIGHTNESS;
     }
     #droid {
-        -webkit-animation-name: TRANSITION-IN, BLUR-IN;
+        -webkit-animation-name: TRANSITION-IN, BLUR-IN, BRIGHTNESS;
         -webkit-animation-duration: 2s;
         -webkit-animation-timing-function: ease-out;
         /*-webkit-animation-fill-mode: forwards;*/
