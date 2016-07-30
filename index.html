@@ -21,7 +21,12 @@
 
 	<!-- CSS Just for demo purpose, don't include it in your project -->
 	<link href="assets/css/demo.css" rel="stylesheet" />
-	  @-webkit-keyframes TRANSITION-IN {
+       
+       <!--- Using this section to test CSS filters which do not work with Chrome/Firefox unless
+       the keyframes for scale and blur are declared seperately. Move this to a style sheet if your
+       using this theme.-->
+       <style>
+        @-webkit-keyframes TRANSITION-IN {
         0% {
             -webkit-transform: scale(0.2);
             opacity: 0;
@@ -37,8 +42,6 @@
             margin-top: 0;
         }
     }
-
-
     @-webkit-keyframes BLUR-IN {
         0% {
             -webkit-filter: blur(50px);
@@ -63,6 +66,7 @@
         -webkit-animation-timing-function: ease-out;
         /*-webkit-animation-fill-mode: forwards;*/
     }
+    </style>
 </head>
 
 <body class="index-page">
