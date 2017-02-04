@@ -18,30 +18,30 @@
     <!-- CSS Files -->
     <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
     <link href="assets/css/material-kit.css" rel="stylesheet"/>
-
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-animate.js"></script>
     <!-- CSS Just for demo purpose, don't include it in your project -->
     <link href="assets/css/demo.css" rel="stylesheet" />
 
 </head>
 <style>
-   /**
-   * My test area for CSS filters.
-   * Move this to a CSS file if using this template.
-   **/
+    /**
+    * My test area for CSS filters.
+    * Move this to a CSS file if using this template.
+    **/
     @-webkit-keyframes TRANSITION-IN {
         0% {
             -webkit-transform: scale(0.8);
             opacity: 0;
         }
-         25% { -webkit-transform: scale(1.4);
+        25% { -webkit-transform: scale(1.4);
         }
-         50% {
-             -webkit-transform: scale(.8);
-         }
-             60% {
-                 -webkit-transform: scale(1.2);
-             }
-
+        50% {
+            -webkit-transform: scale(.8);
+        }
+        60% {
+            -webkit-transform: scale(1.2);
+        }
         75% {
             -webkit-transform: scale(.8);
         }
@@ -57,11 +57,9 @@
         25% {
             --webkit-filter: brightness(1.5);
         }
-
         50% {
             -webkit-filter: brightness(.5);
         }
-
         75% {
             -webkit-filter: brightness(4);
         }
@@ -69,7 +67,6 @@
             -webkit-filter: brightness(1);
         }
     }
-
     @-webkit-keyframes BLUR-IN {
         0% {
             -webkit-filter: blur(50px);
@@ -78,7 +75,6 @@
             filter: sepia(1) contrast(2);
             -webkit-filter: blur(25px);
         }
-
         75% {
             -webkit-filter: blur(50px);
         }
@@ -97,10 +93,10 @@
     }
 
 </style>
-<body class="index-page">
+<body class="index-page" ng-app ="myApp">
 <!-- Navbar -->
 <nav class="navbar navbar-transparent navbar-fixed-top navbar-color-on-scroll">
-    <div class="container">
+    <div class="container" >
         <div class="navbar-header">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navigation-index">
                 <span class="sr-only">Toggle navigation</span>
@@ -124,7 +120,7 @@
             <ul class="nav navbar-nav navbar-right">
                 <li>
                     <a href="http://mikeguessrealestate.com" target="_blank">
-                        <i class="material-icons">dashboard</i> Real Estate
+                        <i class="material-icons">dashboard</i> My Twin
                     </a>
                 </li>
                 <li>
@@ -133,7 +129,7 @@
                     </a>
                 </li>
                 <li>
-                    <a rel="tooltip" title="Follow someone else on Twitter" data-placement="bottom" href="https://twitter.com/" target="_blank" class="btn btn-white btn-simple btn-just-icon">
+                    <a rel="tooltip" title="Follow someone else on twitter" data-placement="bottom" href="https://twitter.com/" target="_blank" class="btn btn-white btn-simple btn-just-icon">
                         <i class="fa fa-twitter"></i>
                     </a>
                 </li>
@@ -160,8 +156,8 @@
             <div class="row">
                 <div class="col-md-8 col-md-offset-2">
                     <div class="brand">
-                        <h1> <span id = "strapin"> Strap In</span></h1>
-                        <h3>GitHub page for Jon Guess featuring Bootstrap, Material-Kit Design, JQuery</h3>
+                        <h1> <span id = "strapin">A little CSS</span></h1>
+                        <h3>GitHub page for Jon Guess featuring Bootstrap, Material-Kit Design, and some CSS.</h3>
                     </div>
                 </div>
             </div>
@@ -218,10 +214,10 @@
                                             </div>
                                             <div class="tab-pane" id="messages">
                                                 <p>I used bootstrap for this page which is a really handy framework for quick design that is responsive. Thumbs up to the twitter bootstrap authors and
-                                                    contributors for their efforts and I can't wait for a Bootstrap 4 beta. This page also uses material-kit by Creative Tim which is an amazing UI for Bootstrap.  In the off chance you want to use this theme, feel free to fork the repo, put your content and images or follow the readme if you need. </p>
+                                                    contributors for their efforts. This page also uses material-kit by Creative Tim which is an amazing UI for Bootstrap.  In the off chance you want to use this theme, feel free to fork the repo, put your content and images or follow the readme if you need. </p>
                                             </div>
                                             <div class="tab-pane" id="settings">
-                                                <p>I wrote about the new iOS beta and although it will still be handy, Apple seems to troll us by announcing that built-in apps can now be removed. And then later adding they programs are not actually removed... only the icons.</p>
+                                                <p>I am still new in the tech field with a year as a web developer, and this site is perfect for me to ticker with while learning new things.</p>
                                             </div>
                                         </div>
                                     </div>
@@ -383,14 +379,6 @@
 										</span>
                                                 <input type="password" placeholder="Password..." class="form-control" />
                                             </div>
-
-                                            <!-- If you want to add a checkbox to this form, uncomment this code
-                                            <div class="checkbox">
-                                                <label>
-                                                    <input type="checkbox" name="optionsCheckboxes" checked>
-                                                    Subscribe to newsletter
-                                                </label>
-                                            </div> -->
                                         </div>
                                         <div class="footer text-center">
                                             <a href="#pablo" class="btn btn-simple btn-primary btn-lg">Get Started</a>
@@ -456,8 +444,9 @@
             <div class="space-50"></div>
 
 
-            <div class="row sharing-area text-center">
-                <h3>Thanks for stopping by!</h3>
+            <div id="hidediv" class="row sharing-area text-center">
+                <h3 id ="nice">Be inspired.</h3>
+
                 <a href="#" class="btn btn-twitter">
                     <i class="fa fa-twitter"></i>
                     Tweet
@@ -512,7 +501,7 @@
 </footer>
 
 
-<!-- Sart Modal -->
+<!-- Start Modal -->
 <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
@@ -523,11 +512,11 @@
                 <h4 class="modal-title">Contact me through GitHub or LinkedIn</h4>
             </div>
             <div class="modal-body">
-            	<p>This theme could easily be used by anyone, just fork it begin making it yours.
+                <p>This theme could easily be used by anyone, just fork it begin making it yours.
                 </p>
                 <p>
-                   Extend it with what ever you need and have fun!
-                 </p>
+                    Extend it with what ever you need and have fun!
+                </p>
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-default btn-simple">Nice Button</button>
@@ -537,7 +526,13 @@
     </div>
 </div>
 <!--  End Modal -->
+<script>
+    var app = angular.module('myApp', ['ngAnimate']);
+    var niceButton = function(){
+        $('#nice').innerHTML = "Countdown started.";
 
+    }
+</script>
 
 </body>
 <!--   Core JS Files   -->
@@ -571,29 +566,40 @@
      */
     $("#logo").rotate({
         bind:
-        {
-            mouseover : function() {
-                $(this).rotate({animateTo:360})
-            },
-            mouseout : function() {
-                $(this).rotate({animateTo:-360})
+            {
+                mouseover : function() {
+                    $(this).rotate({animateTo:360})
+                },
+                mouseout : function() {
+                    $(this).rotate({animateTo:-360})
+                }
             }
-        }
     }); // end rotate
 </script>
 <script>
+
+
     /**
      * Add a 3 second delay to the function
      * @setTimeout {3000}
      */
-   var myVar = setTimeout(changeH1, 3000)
+    var myVar = setTimeout(changeH1, 4000)
     /**
      * Switch the HTML on H1 'strapin'
      */
+    var aVar;
     function changeH1() {
-        if (document.getElementById('strapin').innerHTML = 'Strap In') {
-            document.getElementById('strapin').innerHTML = 'Bootstrap 4 is coming!';
-        } // end if
+        if (document.getElementById('strapin').innerHTML = 'A little CSS') {
+            document.getElementById('strapin').innerHTML = 'Goes a long way';
+            myFunction();
+        }
+        function myFunction() {
+            aVar = setTimeout(anotherFunct, 3000);
+        }
+
+        function anotherFunct() {
+            document.getElementById('strapin').innerHTML = 'Hey there!';
+        }
     }//end function changeH1
 </script>
 </html>
